@@ -1,0 +1,35 @@
+<div class="overlay">
+  <div class="modal">
+    <button class="close-button" (click)="closeBox()">x</button>
+    <form [formGroup]="postProjectForm" id="create-post-form" (ngSubmit)="submit()">
+      <label>Project Name</label>
+      <input
+        type="text"
+        placeholder="Enter Project Name"
+        formControlName="name"
+      />
+      <ng-container *ngIf="postProjectForm.controls['name'].dirty && postProjectForm.controls['name'].touched && postProjectForm.controls['name'].errors">
+        <div *ngIf="postProjectForm.controls['name'].errors['required']">Name is Required</div>
+        <div *ngIf="postProjectForm.controls['name'].errors['minlength']">Has to be 3 characters long</div>
+      </ng-container>
+      <label>Description</label>
+      <input
+        type="text"
+        placeholder="Project Description..."
+        formControlName="description"
+      />
+      <ng-container *ngIf="postProjectForm.controls['description'].dirty && postProjectForm.controls['description'].touched && postProjectForm.controls['description'].errors">
+        <div *ngIf="postProjectForm.controls['description'].errors['required']">Description is Required</div>
+        <div *ngIf="postProjectForm.controls['description'].errors['minlength']">Has to be 5 characters long</div>
+      </ng-container>
+      <button [disabled]="postProjectForm.invalid" [ngClass]="postProjectForm.invalid ? 'disabled' : 'submit'" >Create Project</button>
+    </form>
+    <!-- <div>
+            <select>
+                <option [ngValue]=null selected disabled hidden> Select difficulty </option>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+        </div> -->
+  </div>
+</div>

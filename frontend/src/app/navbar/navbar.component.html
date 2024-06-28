@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <div class="navbar-left">
+      <!-- Place for profile picture or user-related actions -->
+       <img src="./../../assets/login_img_svg.svg" id="nav-img"/>
+       <p *ngIf="user.admin" id="admin-p">Acting as admin</p>
+       <p *ngIf="!user.admin" id="user-p">{{user.profile.firstName + " " + user.profile.lastName.substring(0, 1) + "."}}</p>
+    </div>
+    <ul class="navbar-links">
+      <li><a routerLink="/announcements">Home</a></li>
+      <li><a routerLink="/selectcompany" *ngIf="user.admin">Company</a></li>
+      <li><a routerLink="/teams">Teams</a></li>
+      <li><a routerLink="/userRegistry" *ngIf="user.admin">Users</a></li>
+      <li><a routerLink="/">Logout</a></li>
+    </ul>
+  </nav>

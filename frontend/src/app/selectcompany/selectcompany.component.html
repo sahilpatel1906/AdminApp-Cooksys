@@ -1,0 +1,13 @@
+<div *ngIf="user == undefined || !user.admin">Please login as admin to view this page</div>
+<div class="container" *ngIf="user != undefined && user.admin">
+    <h1>Select Company</h1>
+    <form [formGroup]="companyForm" id="companyform" onsubmit="companySubmit($event)">
+        <select name="companies" id="companies" class="company-names" formControlName="company" (change)="companySubmit()">
+            <option [ngValue]=null selected disabled hidden> Pick an option </option>
+            <option *ngFor="let option of companyList" [ngValue]="option">
+                {{option.name}}
+            </option>
+        </select>
+    </form>
+</div>
+

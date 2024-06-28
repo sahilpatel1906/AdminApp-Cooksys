@@ -1,0 +1,46 @@
+<div id="container">
+  <header>
+    <h1>COOK SYSTEMS</h1>
+    <h2>A final app</h2>
+  </header>
+
+  <div class="login-box">
+    <img
+      src="../../assets/login_img_svg.svg"
+      alt="image will go here"
+      class="flex-item"
+    />
+    <form
+      action=""
+      class="flex-item"
+      [formGroup]="loginForm"
+      (ngSubmit)="login()"
+    >
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="username"
+        value=""
+        formControlName="email"
+      />
+      <ng-container *ngIf="loginForm.controls['email'].dirty && loginForm.controls['email'].touched && loginForm.controls['email'].errors">
+        <p *ngIf="loginForm.controls['email'].errors['required']">Username is required</p>
+      </ng-container>
+     <br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password"
+        value=""
+        formControlName="password"
+      />
+      <ng-container *ngIf="loginForm.controls['password'].dirty && loginForm.controls['password'].touched && loginForm.controls['password'].errors">
+        <p *ngIf="loginForm.controls['password'].errors['required']">Password is required</p>
+      </ng-container> <br /><br />
+      <input [disabled]= "loginForm.disabled" id="submit" type="submit"  value="Log in" />
+      <p *ngIf="credentialCheck">Incorrect username or password</p>
+    </form>
+  </div>
+</div>

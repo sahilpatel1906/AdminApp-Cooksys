@@ -1,0 +1,41 @@
+.active{
+    color: #22DD2A;
+    padding-left: 8em;
+}
+
+.inactive{
+    color: #DF0F0F;
+    padding-left: 8em;
+}
+
+.project-heading{
+    display: flex;
+}
+
+.project-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-details p{
+    width: 70%;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    border-top: 1px solid #DEB992;
+}
+
+#edit-button {
+    background-color: #DEB992;
+}
+
+#edit-button:hover {
+    cursor: pointer;
+    background-color: #d8c3ab;
+    transition: 0.45s;
+  }
+  

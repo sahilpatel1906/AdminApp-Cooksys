@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    width: 100%;             /* Full width of the viewport */
+    height: 50vh;           /* Full height of the viewport */
+    text-align: center;  
+}
+h1{
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1ba098;
+}
+
+.company-names{
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    width: 100%;             /* Full width of the viewport */
+    height: 70vh;           /* Full height of the viewport */
+    text-align: center;  
+}
+
+#companies{
+    color: #5533FF;
+    width: 15vw;
+    height: 35px;
+}
+
+#companies option{
+    font-size: 1.5em;
+    width: 15vw;
+    height: 35px;
+}

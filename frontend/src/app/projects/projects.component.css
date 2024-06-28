@@ -1,0 +1,42 @@
+#project-page{
+    margin: 6em 20em;
+    color: white;
+}
+
+#project-page-heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6em 4em;
+    color: white;
+}
+
+#project-page-heading a{
+    position: absolute;
+    left: 0;
+    color: #1BA098;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#project-page-top{
+    margin-bottom: 1em;
+}
+
+#new-project-button-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#new-project-button{
+    margin-right: 0.5em;
+}
+
+h1{
+    text-align: center;
+    color: #1BA098;
+}
+

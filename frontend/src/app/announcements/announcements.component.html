@@ -1,0 +1,38 @@
+<div *ngIf="user.id !== undefined">
+  <app-navbar></app-navbar>
+
+  <div id="announcements-container">
+    <div class="title">
+      <h1>Announcements</h1>
+      <button *ngIf="user.admin" (click)="newAnnouncement()">New</button>
+    </div>
+    <hr />
+
+    <app-create-announcement
+      class="announcement_banner"
+      *ngIf="toggleCreate"
+      (close)="newAnnouncement()"
+      (createdAnnouncement)="receivedFromChild($event)"
+    ></app-create-announcement>
+
+    <body>
+      <div class="message" *ngIf="announcements === undefined">
+        <h2>No Announcements</h2>
+      </div>
+      <div class="message" *ngFor="let announcment of announcements">
+        <div class="message-header">
+          <div class="name">
+            {{ announcment.author.profile.firstName }}
+            {{ announcment.author.profile.lastName }}
+          </div>
+          <div class="date">{{ announcment.date | date : "MMMM d, y" }}</div>
+        </div>
+        <div class="message-content">
+          <p>{{ announcment.message }}</p>
+        </div>
+      </div>
+    </body>
+  </div>
+
+  <div *ngIf="user.id === undefined">No Access. Please sign in</div>
+</div>

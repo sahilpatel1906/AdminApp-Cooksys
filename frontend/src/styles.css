@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color: #051622;
+  --header-color: #1ba098;
+  --box-color: #0b2d45;
+  --text-color: #ffffff;
+  --secondary-text-color: #d3d3d3;
+  --select-color: #5533ff;
+  --loggedin-color: #f24e1e;
+  --outline-color: #deb992;
+  --active-color: rgba(34, 221, 42, 0.75);
+  --inactive-color: rgba(223, 15, 15, 0.75);
+  --main-font-family: "Inter", system-ui, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Mulish, Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+  height: 100%;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  background-color: #1BA098;
+  width: 7rem;
+  padding: 0.7rem;  
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #22cdc2;
+  transition: 0.45s;
+}

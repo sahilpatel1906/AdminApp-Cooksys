@@ -1,0 +1,42 @@
+<div class="overlay">
+  <div class="modal">
+    <button class="close-button" (click)="closeBox()">x</button>
+    <form
+      action=""
+      class="flex-item"
+      [formGroup]="newUserForm"
+      (ngSubmit)="submit()"
+    >
+      <div>
+        <input type="text" placeholder="first name" formControlName="fname" />
+        <input type="text" placeholder="last name" formControlName="lname" />
+      </div>
+      <div>
+        <input type="text" placeholder="username" formControlName="username" />
+        <input type="text" placeholder="email" formControlName="email" />
+      </div>
+      <div>
+        <input type="text" placeholder="phone" formControlName="phone" />
+      </div>
+      <div>
+        <input type="text" placeholder="password" formControlName="password" />
+        <input
+          type="text"
+          placeholder="confirm password"
+          formControlName="confirm"
+        />
+      </div>
+      <div>
+        <h2>Make user an admin role?</h2>
+        <select formControlName="isAdmin">
+          <option [ngValue]="null" selected disabled hidden>
+            Pick an option
+          </option>
+          <option [ngValue]="true">True</option>
+          <option [ngValue]="false">False</option>
+        </select>
+      </div>
+      <input id="submit" type="submit" value="Create" />
+    </form>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="overlay">
+  <div class="modal">
+    <button class="close-button" (click)="closeBox()">x</button>
+    <form
+      action=""
+      class="flex-item"
+      [formGroup]="announcementForm"
+      (ngSubmit)="submit()"
+    >
+      <div>Title</div>
+      <input
+        type="text" 
+        id="title"
+        name="title"
+        placeholder="title"
+        value=""
+        formControlName="title"
+      />
+      <ng-container *ngIf="announcementForm.controls['title'].dirty && announcementForm.controls['title'].touched && announcementForm.controls['title'].errors">
+        <div *ngIf="announcementForm.controls['title'].errors['required']">Title is Required</div>
+        <div *ngIf="announcementForm.controls['title'].errors['minlength']">Has to be 3 characters long</div>
+      </ng-container>
+      <br />
+      <div>Message</div>
+      <input
+        type="text"
+        id="message"
+        name="message"
+        placeholder="message"
+        value=""
+        formControlName="message"
+      />
+      <ng-container *ngIf="announcementForm.controls['message'].dirty && announcementForm.controls['message'].touched && announcementForm.controls['message'].errors">
+        <div *ngIf="announcementForm.controls['message'].errors['required']">Message is Required</div>
+        <div *ngIf="announcementForm.controls['message'].errors['minlength']">Has to be 5 characters long</div>
+      </ng-container>
+      <br /><br />
+      <!-- <input id="submit" type="submit" value="Create" /> -->
+      <button [disabled]="announcementForm.invalid" [ngClass]="announcementForm.invalid ? 'disabled' : 'submit'">Create</button>
+    </form>
+  </div>
+</div>

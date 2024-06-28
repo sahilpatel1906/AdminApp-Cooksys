@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Post sales and purchase invoices in Microsoft Dynamics 365 Business Central/send-and-receive-electronic-documents-in-dynamics-365-business-central</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.8%" y="-10.9%" width="113.6%" height="117.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-12.9%" y="-8.9%" width="125.8%" height="117.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0956465127 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-5" x="14" y="31" width="33" height="14"></rect>
+        <filter x="-3.0%" y="-21.4%" width="106.1%" height="128.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Post-sales-and-purchase-invoices-in-Microsoft-Dynamics-365-Business-Central" transform="translate(-50.000000, -1060.000000)">
+            <g id="Post-sales-and-purchase-invoices-in-Microsoft-Dynamics-365-Business-Central/send-and-receive-electronic-documents-in-dynamics-365-business-central" transform="translate(50.000000, 1060.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#01B6C3" xlink:href="#path-1"></use>
+                    <g id="Monitor" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(19.000000, 14.000000)">
+                            <path d="M0.571428571,51.4 C0.571428571,53.38 2.20267857,55 4.19642857,55 L54.9464286,55 C56.9401786,55 58.5714286,53.38 58.5714286,51.4 L58.5714286,46 L0.571428571,46 L0.571428571,51.4 Z" id="Fill-1285" fill="#E1E4E1" fill-rule="evenodd"></path>
+                            <path d="M5.13392857,14 C3.17455357,14 1.57142857,15.6 1.57142857,17.5555556 L1.57142857,46 L58.5714286,46 L58.5714286,17.5555556 C58.5714286,15.6 56.9683036,14 55.0089286,14 L5.13392857,14 Z M55.0089286,15.7777778 C55.9912879,15.7777778 56.7901786,16.5751111 56.7901786,17.5555556 L56.7901786,44.2222222 L3.35267857,44.2222222 L3.35267857,17.5555556 C3.35267857,16.5751111 4.1515692,15.7777778 5.13392857,15.7777778 L55.0089286,15.7777778 L55.0089286,15.7777778 Z" id="Fill-1287" fill="#182A37" fill-rule="evenodd"></path>
+                            <path d="M3,17.4766801 C3,16.4770863 3.8073,15.6641801 4.8,15.6641801 L55.2,15.6641801 C56.1927,15.6641801 57,16.4770863 57,17.4766801 L57,45 L3,45 L3,17.8125" id="Fill-1288" fill="#30404D" fill-rule="evenodd"></path>
+                            <path d="M3.76936949,15.9884946 L28,15.9884946 L19.3495526,44.9884946 L2,44.9884946 L2,17.8009946 C2,16.8014008 2.79356222,15.9884946 3.76936949,15.9884946" id="Fill-1289" fill="#384B58" fill-rule="evenodd"></path>
+                            <path d="M28.6006215,14 L28.0469027,15.7777778 L4.19642857,15.7777778 C3.19683482,15.7777778 2.38392857,16.5751111 2.38392857,17.5555556 L2.38392857,44.2222222 L20.1563973,44.2222222 L19.6026786,46 L0.571428571,46 L0.571428571,17.5555556 C0.571428571,15.6 2.20267857,14 4.19642857,14 L28.6006215,14 Z" id="Fill-1290" fill="#30404D" fill-rule="evenodd"></path>
+                            <g id="Document" filter="url(#filter-4)" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(14.000000, 0.000000)">
+                                <path d="M0,3.046875 L0,41.546875 C0,43.059375 1.21304348,44.296875 2.69565217,44.296875 L28.3043478,44.296875 C29.7876304,44.296875 31,43.059375 31,41.546875 L31,11.296875 L20.2173913,0.296875 L2.69565217,0.296875 C1.21304348,0.296875 0,1.534375 0,3.046875 Z" id="Fill-1" fill="#FFFFFF"></path>
+                                <path d="M22.75,11.296875 L31,11.296875 L20,0.296875 L20,8.546875 C20,10.059375 21.2375,11.296875 22.75,11.296875" id="Fill-2" fill="#C5CCCD"></path>
+                                <path d="M23.6666667,25 L6.33333333,25 C5.59733333,25 5,24.328 5,23.5 C5,22.672 5.59733333,22 6.33333333,22 L23.6666667,22 C24.4033333,22 25,22.672 25,23.5 C25,24.328 24.4033333,25 23.6666667,25" id="Fill-7" fill="#E1E4E1"></path>
+                                <path d="M23.6666667,19 L6.33333333,19 C5.59733333,19 5,18.328 5,17.5 C5,16.672 5.59733333,16 6.33333333,16 L23.6666667,16 C24.4033333,16 25,16.672 25,17.5 C25,18.328 24.4033333,19 23.6666667,19" id="Fill-7" fill="#E1E4E1"></path>
+                                <path d="M6.19924514,13.3034703 C5.53726182,13.3034703 5,12.6314703 5,11.8034703 C5,10.9754703 5.53726182,10.3034703 6.19924514,10.3034703 L14.8007549,10.3034703 C15.4633378,10.3034703 16,10.9754703 16,11.8034703 C16,12.6314703 15.4633378,13.3034703 14.8007549,13.3034703 L6.19924514,13.3034703 Z" id="Fill-7" fill="#E1E4E1"></path>
+                            </g>
+                            <polyline id="Fill-1291" fill="#E1E4E1" fill-rule="evenodd" points="36.5714286 63 22.5714286 63 24.3214286 55 34.8214286 55 36.5714286 63"></polyline>
+                            <path d="M34.7714978,55 L24.3075181,55 L23.9070335,56.7777778 L27.5717747,56.7777778 C28.5662365,56.7777778 29.3717055,57.5733333 29.3717055,58.5555556 L29.3717055,63 L36.5714286,63 L34.7714978,55 Z" id="Fill-1292" fill="#CDD6D8" fill-rule="evenodd"></path>
+                            <g id="Rectangle" fill="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#30404D" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <path d="M2.37391974,31.0208884 L23.6924097,30.9591528 L19.3495526,44.9884946 L2,44.9884946 C4.32142246,35.4257427 5.80740278,30.6443668 6.45794096,30.6443668 L2.37391974,31.0208884 Z" id="Fill-1289" fill="#384B58" fill-rule="evenodd"></path>
+                            <path d="M40.5714286,63 C40.5714286,63.55 40.1776786,64 39.6964286,64 L20.4464286,64 C19.9651786,64 19.5714286,63.55 19.5714286,63 C19.5714286,62.45 19.9651786,62 20.4464286,62 L39.6964286,62 C40.1776786,62 40.5714286,62.45 40.5714286,63" id="Fill-1293" fill="#E1E4E1" fill-rule="evenodd"></path>
+                            <path d="M20.4464286,64 L39.6964286,64 C40.1776786,64 40.5714286,63.55 40.5714286,63 L19.5714286,63 C19.5714286,63.55 19.9651786,64 20.4464286,64" id="Fill-1294" fill="#CDD6D8" fill-rule="evenodd"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Dynamic-Border" stroke="#1D8E96" stroke-width="4">
+                    <rect id="Azure-Border" x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

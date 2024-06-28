@@ -1,0 +1,15 @@
+<div *ngFor="let project of projects">
+    <section class="project-card">
+        <div class="project-heading">
+            <p>{{project.name}}</p>
+            <p *ngIf="project.active" class="active">active</p>
+            <p *ngIf="!project.active" class="inactive">inactive</p>
+        </div>
+        <div class="project-details">
+            <p>{{project.description}}</p>
+            <button (click) ="editProject(project)" id="edit-button"> Edit </button>
+        </div>
+    </section>
+</div>
+<app-edit-project (editedProject)="updateProject($event)" [project]="currentProject" *ngIf="toggleCreate" (click)="modalOutsideClicked($event)" (close)="closeModal()"></app-edit-project>
+

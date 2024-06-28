@@ -1,0 +1,36 @@
+<div *ngIf="currentUser.admin">
+
+    <app-navbar></app-navbar>
+
+        
+    <div id="user-registry-content">
+        <div class="title">
+            <h1>User Registry</h1>
+            <p>A general view of all your members in your organization</p>
+        </div>
+        <div class="user-box">
+            <div class="header">
+                <h2>Name</h2>
+                <h2>Email</h2>
+                <h2>Active</h2>
+                <h2>Admin</h2>
+                <h2>Status</h2>
+            </div>
+            <div class="object" *ngFor="let user of users">
+                    <span>{{user.profile.firstName}} {{user.profile.lastName}}</span>
+                    <span>{{user.profile.email}}</span>
+                    <span *ngIf="user.active" class="yes">Yes</span>
+                    <span *ngIf="!user.active" class="no">No</span>
+                    <span *ngIf="user.admin" class="yes">Yes</span>
+                    <span *ngIf="!user.admin" class="no">No</span>
+                    <span>{{user.status}}</span>
+            </div>
+        </div>
+
+        <button (click)="newUser()" id="add-user-button">ADD USER</button>
+
+
+        <app-add-user *ngIf="toggleNewUser" (close)="newUser()" (createdUser)="updateUsers($event)"></app-add-user>
+    </div>
+</div>
+<div *ngIf="!currentUser.admin"><h1>Access Denied</h1></div>

@@ -1,0 +1,39 @@
+<div class="overlay">
+  <div class="modal">
+    <button class="close-button" (click)="closeBox()">x</button>
+    <form [formGroup]="editProjectForm" id="create-post-form" (ngSubmit)="submit()">
+      <label>Project Name</label>
+      <input
+        type="text"
+        placeholder="Enter Project Name"
+        formControlName="name"
+      />
+      <ng-container *ngIf="editProjectForm.controls['name'].dirty && editProjectForm.controls['name'].touched && editProjectForm.controls['name'].errors">
+        <div *ngIf="editProjectForm.controls['name'].errors['required']">Name is Required</div>
+        <div *ngIf="editProjectForm.controls['name'].errors['minlength']">Has to be 3 characters long</div>
+      </ng-container>
+      <label>Description</label>
+      <input
+        type="text"
+        placeholder="Project Description..."
+        formControlName="description"
+      />
+      <ng-container *ngIf="editProjectForm.controls['description'].dirty && editProjectForm.controls['description'].touched && editProjectForm.controls['description'].errors">
+        <div *ngIf="editProjectForm.controls['description'].errors['required']">Description is Required</div>
+        <div *ngIf="editProjectForm.controls['description'].errors['minlength']">Has to be 5 characters long</div>
+      </ng-container>
+      <h2>Active?</h2>
+      <select formControlName="active">
+        <option [ngValue]="null" selected disabled hidden>
+          Pick an option
+        </option>
+        <option [ngValue]="true">Active</option>
+        <option [ngValue]="false">Inactive</option>
+      </select>
+      <ng-container *ngIf="editProjectForm.controls['active'].dirty && editProjectForm.controls['active'].touched && editProjectForm.controls['active'].errors">
+        <div *ngIf="editProjectForm.controls['active'].errors['required']">Please Select Active Status</div>
+      </ng-container>
+      <button [disabled]="editProjectForm.invalid" [ngClass]="editProjectForm.invalid ? 'disabled' : 'submit'">Submit</button>
+    </form>
+  </div>
+</div>

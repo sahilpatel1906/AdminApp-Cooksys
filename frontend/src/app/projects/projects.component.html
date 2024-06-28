@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div id="project-page-heading">
+    <a href="#" (click)="backToTeams()">&lt; Back</a>
+    <h1>Project for {{team.name}}</h1>
+</div>
+<div id="project-page">
+<section id="project-page-top" *ngIf="user.admin">
+    <div id="new-project-button-div">
+        <button id="new-project-button" (click) ="newProject()" >New</button>
+    </div>
+</section>
+<app-project-card (editedProject)="editedProjectUpdate($event)" [projects]="projects"></app-project-card>
+<app-create-project (addProject)="updateProjects($event)" *ngIf="toggleCreate" (close)="newProject()" (click)="modalOutsideClicked($event)"></app-create-project>
+</div>    
+    

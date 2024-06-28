@@ -1,0 +1,39 @@
+<div *ngIf="user.id !== undefined">
+    <app-navbar></app-navbar>
+    <header>
+    <h1>Teams</h1>
+    </header>
+
+    <div class="teams-container">
+    <div class="team-container" *ngFor="let team of teamList">
+        <a href="#" (click)="projectSelect(team);">
+        <div class="title-container">
+        <div class="team-number">{{ team.name }}</div>
+        <div class="project-number"># of projects: {{ team.projectNumber }}</div>
+        </div>
+        <hr />
+        <div class="members-title">Members</div>
+        <div class="members-container">
+        <div class="member" *ngFor="let member of team.teammates">
+            {{ member.profile.firstName }}
+        </div>
+        </div>
+        </a>
+    </div>
+
+    <div class="new-team-container" (click) ="newTeam()" *ngIf="user.admin" >
+        <div class="plus-sign">+</div>
+        <div class="text-content">
+        <h2>New Team</h2>
+        </div>
+    </div>
+    </div>
+    <app-create-team
+    *ngIf="toggleCreate"
+    (click)="modalOutsideClicked($event)"
+    (childComponentValue)="recievedFromChild($event)"
+    (createdTeam)="receivedNewTeam($event)"
+    (close)="newTeam()"
+    ></app-create-team>
+</div>
+<h1 *ngIf="user.id === undefined">No Access. Please sign in</h1>

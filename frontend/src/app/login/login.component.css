@@ -1,0 +1,62 @@
+#container {
+  margin-top: 7rem;
+}
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border: solid;
+  border-color: #deb992;
+  border-radius: 1rem;
+  width: 20%;
+  padding: 2rem;
+  margin: auto;
+  box-shadow: 0 0 10px #deb992;
+}
+img {
+  width: 30%;
+}
+::placeholder {
+  color: var(--header-color);
+}
+.flex-item {
+  text-align: center;
+  margin: 5px;
+}
+
+header {
+  font-size: 2rem;
+  line-height: 0.6;
+  text-align: center;
+  color: var(--header-color);
+  text-transform: uppercase;
+  position: relative;
+}
+
+#submit {
+  width: 10rem;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border: solid;
+  color: var(--text-color);
+  border-radius: 1.5rem;
+  border-color: var(--header-color);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+#email,
+#password {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+  outline: none;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+p{
+  color: var(--header-color);
+}
